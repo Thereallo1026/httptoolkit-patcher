@@ -2,7 +2,7 @@
 
 A minimal, cross-platform patcher for HTTP Toolkit that removes subscription requirements.
 
-![WindowsTerminal_BsiVsdyUoj](https://github.com/user-attachments/assets/20a226f3-4620-4a0e-b1df-8cc55609203c)
+![Screenshot](https://cdn.jsdelivr.net/gh/Thereallo1026/assets@main/assets/Screenshot%202026-04-19%20at%206.29.16%E2%80%AFAM.png)
 
 ## Why?
 
@@ -25,24 +25,24 @@ By hooking these functions, we bypass the subscription checks entirely.
 1. Install Node.js (if not already installed)
 2. Install dependencies:
 ```bash
-npm install
+bun install
 ```
 
 ## Usage
 
 **Patch HTTP Toolkit:**
 ```bash
-npm start
+bun start
 ```
 
 **Unpatch/Restore:**
 ```bash
-npm run unpatch
+bun run unpatch
 ```
 
 **Show help:**
 ```bash
-npm start help
+bun start help
 ```
 
 That's it. The patcher handles everything automatically and will request elevated permissions if needed.
@@ -62,7 +62,7 @@ That's it. The patcher handles everything automatically and will request elevate
 
 **Already patched?** The patcher will ask if you want to repatch.
 
-**Want to restore?** Run `npm run unpatch` to restore from backup.
+**Want to restore?** Run `bun run unpatch` to restore from backup.
 
 **Anything else?** Open an issue on the [GitHub repository](https://github.com/xenos1337/httptoolkit-patcher/issues).
 

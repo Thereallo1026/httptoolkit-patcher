@@ -2,15 +2,16 @@
 	"name": "httptoolkit-patcher",
 	"version": "2.0.11",
 	"description": "HTTP Toolkit Pro Patcher",
-	"main": "index.js",
+	"main": "src/index.js",
 	"type": "module",
-	"bin": "index.js",
+	"bin": "src/index.js",
 	"author": "xenos1337",
 	"scripts": {
-		"start": "node index.js",
-		"patch": "node index.js patch",
-		"unpatch": "node index.js unpatch",
-		"restore": "node index.js restore"
+		"start": "bun src/index.js",
+		"patch": "bun src/index.js patch",
+		"unpatch": "bun src/index.js unpatch",
+		"restore": "bun src/index.js restore",
+		"format": "biome format --write"
 	},
 	"license": "MIT",
 	"dependencies": {
@@ -18,6 +19,7 @@
 		"chalk": "5.6.2"
 	},
 	"devDependencies": {
+		"@biomejs/biome": "^2.4.12",
 		"@types/node": "^25.5.0"
 	}
 }

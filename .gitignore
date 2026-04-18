@@ -4,3 +4,4 @@ node_modules
 .yarnrc.yml
 dist/
 release/
+.DS_Store
